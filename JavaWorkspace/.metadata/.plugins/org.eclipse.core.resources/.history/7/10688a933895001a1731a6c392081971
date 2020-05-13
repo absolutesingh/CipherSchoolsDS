@@ -1,0 +1,22 @@
+package primitiveDT;
+import java.util.*;
+public class ScannerLearn {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "We're learning about Scanner";
+		System.out.println(s);
+		Scanner sc = new Scanner(System.in);
+//		int m = sc.nextInt();
+//		int n = sc.nextInt();
+//		System.out.println("The Value of m is: "+m);
+//		System.out.println("The Value of n is: "+n);
+		
+//		String name = sc.next();//Gives us one Word
+//		System.out.println("Name is: " + name);
+		
+		String fullName = sc.nextLine();
+		
+	}
+
+}
