@@ -1,0 +1,15 @@
+package primitiveDT;
+class Car
+{
+	String name;
+	String color;
+	int manYear;
+}
+public class constructor {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

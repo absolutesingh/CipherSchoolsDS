@@ -1,0 +1,14 @@
+package primitiveDT;
+class demo{
+	void fun(){
+		System.out.println("I have no Parameters");
+	}
+}
+public class methodOverload {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

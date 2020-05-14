@@ -1,0 +1,28 @@
+package primitiveDT;
+class Parent{
+	void fun()//overridden method
+	{
+		System.out.println("Hi I'm A");
+	}
+	int a =10;
+}
+class Child extends Parent{
+	int a=5;
+	void parentFun(){
+		super.fun();
+	}
+	void fun()//overriding method
+	{
+		System.out.println("Hi I'm B");
+	}
+}
+public class methodoverriding {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Child c = new Child();
+		c.fun();
+		c.parentFun();
+	}
+
+}
