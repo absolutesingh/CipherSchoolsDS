@@ -1,0 +1,12 @@
+package primitiveDT;
+class sampleAbstract
+{
+	}
+public class AbstractStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

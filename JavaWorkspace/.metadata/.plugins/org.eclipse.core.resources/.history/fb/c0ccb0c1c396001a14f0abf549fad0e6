@@ -1,0 +1,19 @@
+package primitiveDT;
+class Students
+{
+	String name;
+	int rollNo;
+//	Students(String name,int rollNo)
+//	{
+//		this.name=name;
+//		this.rollNo = rollNo;
+//	}
+}
+public class hash_Code {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

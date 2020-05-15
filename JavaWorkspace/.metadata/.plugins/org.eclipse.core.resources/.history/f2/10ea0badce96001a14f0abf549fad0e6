@@ -1,0 +1,20 @@
+package primitiveDT;
+class Coders{
+	String name;
+	int numId;
+	Coders(String name, int numId) {
+		this.name = name;
+		this.numId = numId;
+	}
+	
+}
+public class StaticCount {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Coders c1 = new Coders("Shivam",1);
+		Coders c2 = new Coders("Radhika",2);
+		
+	}
+
+}

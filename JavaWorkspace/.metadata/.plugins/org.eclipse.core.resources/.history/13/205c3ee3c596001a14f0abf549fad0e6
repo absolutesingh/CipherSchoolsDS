@@ -1,0 +1,22 @@
+package primitiveDT;
+class Parents
+{
+	void printParentHashCode(){
+		System.out.println(this.hashCode());
+	}
+}
+class Childs extends Parents{
+	void printChildHashCode(){
+		System.out.println(this.hashCode());
+	}
+}
+public class objCreation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Parents p = new Parents();
+		Childs c = new Childs();
+		
+	}
+
+}

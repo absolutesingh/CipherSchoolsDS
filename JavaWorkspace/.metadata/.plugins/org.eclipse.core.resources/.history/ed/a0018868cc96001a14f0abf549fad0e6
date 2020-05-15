@@ -1,0 +1,31 @@
+package primitiveDT;
+class bada{
+	final void print() // final methods cannot be overridden
+	{
+		System.out.println("Hi I'm Bada");
+	}
+	void print(int n)
+	{
+		System.out.println("N: "+n);
+	}
+}
+class chhota extends bada{
+	void print()
+	{
+		System.out.println("Hi I'm Chhota");
+		super.print();
+	}
+}
+final class Myclass{
+	
+}
+class Hello extends Myclass{
+	
+}
+public class keywords {
+	public static void main(String[] args)
+	{
+		chhota c = new chhota();
+		c.print();
+	}
+}

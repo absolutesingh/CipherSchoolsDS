@@ -1,0 +1,21 @@
+package primitiveDT;
+class bada{
+	final void print()
+	{
+		System.out.println("Hi I'm Bada");
+	}
+}
+class chhota extends bada{
+	void print()
+	{
+		System.out.println("Hi I'm Chhota");
+		super.print();
+	}
+}
+public class keywords {
+	public static void main(String[] args)
+	{
+		chhota c = new chhota();
+		c.print();
+	}
+}
