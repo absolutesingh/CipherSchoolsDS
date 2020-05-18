@@ -1,0 +1,12 @@
+package primitiveDT;
+interface A{
+	int x=5;
+}
+public class InterfaceStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

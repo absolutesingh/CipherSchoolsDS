@@ -1,0 +1,36 @@
+package primitiveDT;
+abstract class Account{
+	int balance;
+//	double rate;
+	Account(int balance)
+	{
+		this.balance=balance;
+	}
+	void showBalance(){
+		System.out.println(this.balance);
+	}
+	abstract void calculate();
+}
+class SavingsAccount extends Account
+{
+	
+	double rate = 5;
+	void calculate(){
+		System.out.println(balance*rate/100);
+	}
+}
+class CurrentAccount extends Account
+{
+	double rate = 0;
+	void calculate(){
+		System.out.println("0");
+	}
+}
+public class banks {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package primitiveDT;
+interface AI{
+	int x=5;
+	void fun();
+}
+class interfaceKoInherit implements AI
+{
+	
+}
+public class InterfaceStudy {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

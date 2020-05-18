@@ -1,0 +1,13 @@
+package accessmodifiers;
+
+public class first {
+	private int a =5;
+	int b = 10;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		first f = new first();
+		System.out.println(f.a);
+		System.out.println(f.b);
+	}
+
+}
