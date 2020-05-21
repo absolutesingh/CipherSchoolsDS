@@ -90,7 +90,7 @@ public class arraysone {
 		{
 			System.out.println("Hello");
 		}
-        System.out.println(i);
+        
 	}
 
 }

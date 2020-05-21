@@ -1,0 +1,14 @@
+package recursion;
+
+public class descendingprint {
+	static void fun(int n)
+	{
+		System.out.println(n);
+		fun(n-1);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		fun(5);
+	}
+
+}
