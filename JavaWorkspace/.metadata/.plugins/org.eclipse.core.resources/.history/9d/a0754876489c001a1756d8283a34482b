@@ -1,0 +1,14 @@
+package sorting;
+
+public class binarysearch {
+	static int bSearch(int arr[])
+	{
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[]={2,4,6,8,10};
+		System.out.println(bSearch(arr));;
+	}
+
+}

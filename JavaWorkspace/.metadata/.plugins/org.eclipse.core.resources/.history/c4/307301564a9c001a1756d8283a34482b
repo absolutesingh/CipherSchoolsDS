@@ -1,0 +1,13 @@
+package recursion;
+
+public class BinarySearch {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		int fullName "Camel Casing"
+		int arr[]={2,4,6,8,10};
+		int x=8;
+		System.out.println(bSearch(arr,0,arr.length-1,x));
+	}
+
+}

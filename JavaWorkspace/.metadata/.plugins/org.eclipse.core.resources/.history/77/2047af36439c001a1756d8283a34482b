@@ -4,9 +4,8 @@ public class descendingprint {
 	static void fun(int n)
 	{
 		if(n<0) return;
-//		System.out.println(n); //A
-		fun(n-1);//B
 		System.out.println(n); //A
+		fun(n-1);//B
 		
 		//or 
 		

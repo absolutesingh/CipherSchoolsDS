@@ -1,0 +1,31 @@
+package sorting;
+
+public class binarysearch {
+	static int bSearch(int arr[],int x)
+	{
+		int l=0;
+		int r = arr.length-1;
+		//loop
+		while(l<=r)
+		{
+			int mid = (l+r)/2;
+			if(x==arr[mid]) return mid;
+			else if(x>arr[mid])
+			{
+				l=mid+1;
+			}
+			else
+			{
+				r=mid-1;
+			}
+		}
+		return -1;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[]={2,4,6,8,10};
+		int x=10;//search x in the array
+		System.out.println(bSearch(arr,x));;
+	}
+
+}
