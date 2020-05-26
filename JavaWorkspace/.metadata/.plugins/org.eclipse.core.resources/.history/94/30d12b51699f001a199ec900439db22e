@@ -1,0 +1,22 @@
+package primitiveDT;
+
+public class artisticpattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int size = 1;
+		for(int i=0;i<2*size+1;i++)
+		{
+			if(i==0)
+			{
+				System.out.print("+");
+				for(int j=0;j<2*size;j++)
+				{
+					System.out.println("-");
+				}
+				System.out.println("+");
+			}
+		}
+	}
+
+}

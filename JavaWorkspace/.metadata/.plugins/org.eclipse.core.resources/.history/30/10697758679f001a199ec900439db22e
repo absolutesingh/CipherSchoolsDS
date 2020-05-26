@@ -89,6 +89,55 @@ public class funcs {
 		System.out.println("SubString2 is: "+sub2);
 		String sub3= s.substring(9,12);//9-11
 		System.out.println(sub3);
+		//13 - charAt() - something like - arr[i]
+		System.out.println(s.charAt(0));
+		System.out.println(we.charAt(11));
+		//14 String to Character Array
+		char ch[] = s.toCharArray();
+		for(int j=0;j<ch.length;j++)
+			{
+				System.out.print(ch[j]+" ");
+			}
+		System.out.println();
+		//15
+		System.out.println(s.isEmpty());
+		String es="";
+		System.out.println(es.isEmpty());
+		//16 - Comparing two Strings - lexicographically
+		String s1 = "A";//1
+		String s2="B";//2
+		String s3="AA";
+		String s4="AC";
+		String s5 = "C";//3
+		System.out.println(s1.compareTo(s2));
+		System.out.println(s2.compareTo(s1));
+		System.out.println(s1.compareTo(s5));
+		System.out.println(s3.compareTo(s4));
+		//17 - Concatenation
+//		String concatenated = s.concat(we);
+		String concatenated = s+we;//concatenation
+		System.out.println(concatenated);
+		//18 - trim (removes spaces from starting and ending only)
+		String nameless="    Hello    There    ";
+		System.out.println(nameless);
+		nameless = nameless.trim();
+		System.out.println(nameless);
+		//19 - replace
+//		s - CipherSchools
+		System.out.println(s.replace('o', '*'));
+		//replaceAll
+		String numbers = "one one two three four";
+		System.out.println(numbers.replaceAll("one","five" ));
+		System.out.println(we.replaceAll("[AEIOUaeiou]", "*"));
+		//20 Convert any DT to String
+		int x =5;
+		String sx=5+"";//not a good method
+		System.out.println(sx);
+		String sxgood = String.valueOf(x);
+		System.out.println(sxgood);
+		
+		//21 - HW
+//		s.contains(sxgood);
 		
 	}
 

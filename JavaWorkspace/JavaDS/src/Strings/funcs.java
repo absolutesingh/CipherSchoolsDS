@@ -137,7 +137,7 @@ public class funcs {
 		System.out.println(sxgood);
 		
 		//21 - HW
-//		s.contains(sxgood);
+		System.out.println(s.contains("School"));
 		
 	}
 

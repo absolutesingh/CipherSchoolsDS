@@ -1,0 +1,3 @@
+Check the codes in the workspace.
+First class of strings.
+Discussed Strings functions, constructors, string pool etc.
