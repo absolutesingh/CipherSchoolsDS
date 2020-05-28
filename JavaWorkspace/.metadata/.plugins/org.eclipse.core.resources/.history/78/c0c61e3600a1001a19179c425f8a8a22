@@ -1,0 +1,14 @@
+package LinkedLists;
+class Node//we have defined this class
+{
+	int data;
+	Node next;//reference variable
+}
+public class MyLL {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Node head=new Node();
+	}
+
+}
