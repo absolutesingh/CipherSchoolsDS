@@ -99,7 +99,6 @@ public class MyLL {
 		Node next=null;
 		while(current!=null)
 		{
-			//store the next node
 			next=current.next; // 2
 			//swapping
 			current.next=prev;
@@ -156,8 +155,6 @@ public class MyLL {
 		printLL(head);
 		middleElement(head);
 		efficientMiddleElement(head);
-		head = reverse(head);
-		printLL(head);
 	}
 
 }

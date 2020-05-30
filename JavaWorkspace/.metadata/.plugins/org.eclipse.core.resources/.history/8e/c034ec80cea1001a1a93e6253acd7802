@@ -84,34 +84,12 @@ public class MyLL {
 	{
 		Node fptr=head;
 		Node sptr=head;
-//		while(fptr.next!=null && fptr!=null)
-		while(fptr!=null && fptr.next!=null)
+		while(fptr.next!=null && fptr!=null)
 		{
 			fptr=fptr.next.next;
 			sptr=sptr.next;
 		}
-		System.out.println(sptr.data);
-	}
-	static Node reverse(Node head)
-	{
-		Node current = head;
-		Node prev=null;
-		Node next=null;
-		while(current!=null)
-		{
-			//store the next node
-			next=current.next; // 2
-			//swapping
-			current.next=prev;
-			//now we have to move current ahead
-			prev=current;
-			current=next;//shift current to next node
-		}
-
-		//after the loop, current will be null and prev will be at the last position which is the head for the new LL
-
-		return prev;
-
+		Syso(sptr.data);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -151,13 +129,9 @@ public class MyLL {
 //		head = insertAtPos(head,9,12);
 //		printLL(head);
 		middleElement(head);
-		efficientMiddleElement(head);
 		head = insertAtPos(head,10,7);
 		printLL(head);
 		middleElement(head);
-		efficientMiddleElement(head);
-		head = reverse(head);
-		printLL(head);
 	}
 
 }

@@ -92,14 +92,13 @@ public class MyLL {
 		}
 		System.out.println(sptr.data);
 	}
-	static Node reverse(Node head)
+	static void reverse(Node head)
 	{
 		Node current = head;
 		Node prev=null;
 		Node next=null;
 		while(current!=null)
 		{
-			//store the next node
 			next=current.next; // 2
 			//swapping
 			current.next=prev;
@@ -110,7 +109,7 @@ public class MyLL {
 
 		//after the loop, current will be null and prev will be at the last position which is the head for the new LL
 
-		return prev;
+		Return prev;
 
 	}
 	public static void main(String[] args) {
@@ -156,8 +155,6 @@ public class MyLL {
 		printLL(head);
 		middleElement(head);
 		efficientMiddleElement(head);
-		head = reverse(head);
-		printLL(head);
 	}
 
 }
