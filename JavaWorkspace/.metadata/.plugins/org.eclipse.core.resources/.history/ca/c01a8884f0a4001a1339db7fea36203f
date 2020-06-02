@@ -1,0 +1,10 @@
+package stacks;
+
+public class ArrayImp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
