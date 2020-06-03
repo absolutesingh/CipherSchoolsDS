@@ -1,6 +1,6 @@
-package Strings;
+package stacks;
 
-public class freqarr {
+public class balancedParenthesis {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
