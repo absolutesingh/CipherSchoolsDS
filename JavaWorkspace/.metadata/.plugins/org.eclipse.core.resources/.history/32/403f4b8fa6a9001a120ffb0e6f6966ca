@@ -1,0 +1,21 @@
+package setAndMap;
+import java.util.*;
+public class LearningMap {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashMap<Integer,String> map = new HashMap<>();
+		map.put(1, "Mango");
+		map.put(2, "Banana");
+		map.put(3, "Kiwi");
+		map.put(4, "Apple");
+		System.out.println(map.keySet());
+		System.out.println(map.get(3));
+		map.put(3, "Orange");// No errors
+		System.out.println(map.get(3));//value at 3 is updated
+		map.put(5, "Mango");
+		System.out.println(map.get(5));//duplicate values are allowed
+		System.out.println(map.entrySet());
+	}
+
+}

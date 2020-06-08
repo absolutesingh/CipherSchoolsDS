@@ -3,4 +3,5 @@
 <fullyQualifiedTypeName name="java.lang.instrument.Instrumentation"/>
 <fullyQualifiedTypeName name="accessmodifiers.first"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>
