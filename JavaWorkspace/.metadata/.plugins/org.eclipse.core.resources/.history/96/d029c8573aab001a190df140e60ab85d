@@ -105,27 +105,6 @@ public class BinaryTree {
 		return isSymmetric(root1.left,root2.left)
 				&& isSymmetric(root1.right,root2.right);
 	}
-	boolean isIsomorphic(Node root1, Node root2)
-	{
-		if(root1 == null && root2 == null) return true;
-		if(root1 == null || root2 == null) return false;
-		return root1.data==root2.data 
-				&&((isIsomorphic(root1.left,root2.left)
-						&&isIsomorphic(root1.right,root2.right))
-				||
-				(isIsomorphic(root1.left,root2.right)
-						&&isIsomorphic(root1.right,root2.left)));
-	}
-	void bfsRec(Node root)
-	{
-		if(root==null) return;
-		int h = height(root);
-		for(int i=0;i<=h;i++)
-		{
-			printAtLevel(root, i);
-			System.out.println();
-		}
-	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		BinaryTree bt = new BinaryTree(2);//Binary Tree with root node 2
@@ -170,15 +149,7 @@ public class BinaryTree {
 		System.out.println(bt.isMirror(bt.root,bt2.root));//identical
 		bt.toMirror(bt.root);
 		System.out.println(bt.isMirror(bt.root,bt2.root));// now they should become mirrors
-		System.out.println(bt.isIdentical(bt.root,bt2.root));// not identical now
+		System.out.println(bt.isMirror(bt.root,bt2.root));// not identical now
 		System.out.println(bt.isSymmetric(bt.root,bt2.root));// but are symmetric
-		BinaryTree bt4 = new BinaryTree(2);//Binary Tree with root node 2
-		bt4.root.left = new Node(3);
-		bt4.root.right = new Node(5);
-		bt4.root.left.left = new Node(9);
-		bt4.root.right.left = new Node(7); // Required tree Created
-//		bt4.root.right.right=new Node(10);
-		System.out.println(bt.isIsomorphic(bt.root,bt4.root));
-		bt2.bfsRec(bt2.root);
 	}
 }

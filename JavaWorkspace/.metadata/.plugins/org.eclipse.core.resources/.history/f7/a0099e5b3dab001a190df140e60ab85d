@@ -116,16 +116,6 @@ public class BinaryTree {
 				(isIsomorphic(root1.left,root2.right)
 						&&isIsomorphic(root1.right,root2.left)));
 	}
-	void bfsRec(Node root)
-	{
-		if(root==null) return;
-		int h = height(root);
-		for(int i=0;i<=h;i++)
-		{
-			printAtLevel(root, i);
-			System.out.println();
-		}
-	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		BinaryTree bt = new BinaryTree(2);//Binary Tree with root node 2
@@ -179,6 +169,6 @@ public class BinaryTree {
 		bt4.root.right.left = new Node(7); // Required tree Created
 //		bt4.root.right.right=new Node(10);
 		System.out.println(bt.isIsomorphic(bt.root,bt4.root));
-		bt2.bfsRec(bt2.root);
+	
 	}
 }
