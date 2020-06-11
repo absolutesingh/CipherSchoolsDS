@@ -1,0 +1,25 @@
+package Trees;
+class BSTNode{
+	int data;
+	Node left;
+	Node right;
+	BSTNode(int data)
+	{
+		this.data=data;
+		this.left=null;
+		this.right=null;
+	}
+}
+class BST
+{
+	
+}
+public class BSTApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		BST bst = new BST();
+		BSTNode root = new BSTNode();
+	}
+
+}
