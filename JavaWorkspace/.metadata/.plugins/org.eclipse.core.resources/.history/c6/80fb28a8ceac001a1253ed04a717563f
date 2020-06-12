@@ -122,7 +122,6 @@ class BST
 		}
 		return root;
 	}
-	
 }
 public class BSTApp {
 

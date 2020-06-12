@@ -162,18 +162,6 @@ public class BinaryTree {
 		if(left_LCA!=null) return left_LCA;
 		return right_LCA;
 	}
-	int levelPrint = 0;
-	void leftView(Node root, int level)
-	{
-		if(root == null) return;
-		if(level==levelPrint) 
-		{
-			System.out.print(root.data+" ");
-			levelPrint++;
-		}
-		leftView(root.left,level+1);
-		leftView(root.right,level+1);
-	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		BinaryTree bt = new BinaryTree(2);//Binary Tree with root node 2
@@ -229,9 +217,5 @@ public class BinaryTree {
 		System.out.println(bt.isIsomorphic(bt.root,bt4.root));
 		bt2.bfsRec(bt2.root);
 		bt2.bfsItr(bt2.root);
-		System.out.println();
-		System.out.println(bt2.findLCA(bt2.root, 2, 3).data);
-		bt2.leftView(bt2.root, 0);
-		System.out.println();
 	}
 }

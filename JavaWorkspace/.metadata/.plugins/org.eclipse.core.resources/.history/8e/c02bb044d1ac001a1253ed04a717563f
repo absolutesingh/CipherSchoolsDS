@@ -171,8 +171,6 @@ public class BinaryTree {
 			System.out.print(root.data+" ");
 			levelPrint++;
 		}
-		leftView(root.left,level+1);
-		leftView(root.right,level+1);
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -231,7 +229,5 @@ public class BinaryTree {
 		bt2.bfsItr(bt2.root);
 		System.out.println();
 		System.out.println(bt2.findLCA(bt2.root, 2, 3).data);
-		bt2.leftView(bt2.root, 0);
-		System.out.println();
 	}
 }
