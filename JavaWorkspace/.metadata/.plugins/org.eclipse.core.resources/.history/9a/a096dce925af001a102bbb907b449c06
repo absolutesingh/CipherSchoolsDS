@@ -1,0 +1,27 @@
+package priorityqueueAndHeaps;
+class PQArray{
+	final int size = 10;
+	int arr[]=new int[size];
+	int nItems = 0;
+	public int remove() {
+		return arr[--nItems];
+	}
+	public int peek() {
+		return arr[nItems-1];
+	}
+	public boolean isEmpty()
+	{
+		return nItems==0;
+	}
+	public int size() {
+		return nItems;
+	}
+}
+public class ArrayImp {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
