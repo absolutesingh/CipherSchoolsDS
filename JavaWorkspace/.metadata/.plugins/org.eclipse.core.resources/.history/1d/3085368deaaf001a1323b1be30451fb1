@@ -1,0 +1,15 @@
+package priorityqueueAndHeaps;
+class MinHeap{
+	final int capacity = 10;//size
+	int size = 0;//nItems
+	int arr[] = new int[capacity];
+	
+}
+public class minHeapApp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

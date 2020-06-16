@@ -7,4 +7,7 @@
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="java.util.Queue"/>
     <fullyQualifiedTypeName name="java.util.PriorityQueue"/>
+    <fullyQualifiedTypeName name="javax.swing.SizeSequence"/>
+    <fullyQualifiedTypeName name="priorityqueueAndHeaps.MaxHeap"/>
+    <fullyQualifiedTypeName name="java.security.spec.MGF1ParameterSpec"/>
 </qualifiedTypeNameHistroy>
