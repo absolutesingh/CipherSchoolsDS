@@ -42,36 +42,15 @@ class graph{
 			System.out.print(temp+" ");
 			for(Integer x:arr[temp])
 			{
-				if(!visited[x])
+				if(visited[x] ==false)
 				{
 					queue.add(x);
 					visited[x] = true;
 				}
 			}
 		}
-		System.out.println();
 	}
-	
-	void DFS(int s)
-	{
-		boolean visited[] = new boolean[v];
-		System.out.println("-----DFS-----");
-		DFSUtil(s,visited);
-		System.out.println();
-	}
-	void DFSUtil(int s, boolean visited[]) {
-		visited[s]=true;
-		System.out.print(s + " ");
-		for(Integer x:arr[s])
-		{
-			if(!visited[x]) {
-				DFSUtil(x, visited);				
-			}				
-		}
-	}
-	
 }
-
 public class graphLL {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -84,12 +63,7 @@ public class graphLL {
 		graph.addEdge(2, 4);
 		graph.addEdge(3, 4);
 		graph.print();
-		graph.BFS(0);
-		graph.BFS(3);
-		graph.BFS(2);
-		graph.DFS(0);
-		graph.DFS(3);
-		graph.DFS(4);
+		graph.BFS(s);
 	}
 
 }

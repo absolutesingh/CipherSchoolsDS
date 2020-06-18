@@ -89,7 +89,7 @@ public class graphLL {
 		graph.BFS(2);
 		graph.DFS(0);
 		graph.DFS(3);
-		graph.DFS(4);
+		graph.DFS(3);
 	}
 
 }
