@@ -84,13 +84,14 @@ class graph{
 				DFSUtil(x, visited);				
 			}				
 		}
-	}	
+	}
+	
 }
 
 public class graphLL {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		graph graph = new graph(8);
+		graph graph = new graph(7);
 		graph.addEdge(0, 1);
 		graph.addEdge(0, 1);
 		graph.addEdge(0, 2);

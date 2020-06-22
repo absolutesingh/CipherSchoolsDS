@@ -63,17 +63,14 @@ class graph{
 	{
 		boolean visited[] = new boolean[v];
 		System.out.println("-----DFS Overall-----");
-		int count = 0;
 		for(int i=0;i<v;i++)
 		{
 			if(!visited[i])
 			{
-				count++;
 				DFSUtil(i, visited);
 				System.out.println();//print line after each component
 			}
 		}
-		System.out.println("Total Components are: " + count);
 	}
 	void DFSUtil(int s, boolean visited[]) {
 		visited[s]=true;
@@ -84,13 +81,14 @@ class graph{
 				DFSUtil(x, visited);				
 			}				
 		}
-	}	
+	}
+	
 }
 
 public class graphLL {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		graph graph = new graph(8);
+		graph graph = new graph(7);
 		graph.addEdge(0, 1);
 		graph.addEdge(0, 1);
 		graph.addEdge(0, 2);

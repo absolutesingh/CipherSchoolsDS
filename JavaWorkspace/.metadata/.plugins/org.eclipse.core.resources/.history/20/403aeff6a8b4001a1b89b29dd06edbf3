@@ -1,0 +1,54 @@
+package graphs;
+
+import java.util.Scanner;
+
+public class greedyalgos {
+	static void dijkstras(int adjMatrix[][],int src)
+	{
+		int v = adjMatrix.length;
+		boolean visited[] = new boolean[v];
+		int distance[] = new int[v];
+		for(int i=0;i<v;i++)
+		{
+			distance[i] = Integer.MAX_VALUE;
+		}
+		distance[src] = 0;
+		for(int i=0;i<v-1;i++)
+		{
+			int minVertex = findMinVertex(distance,visited);
+			visited[minVertex] = true;
+			for(int j=0;j<v;j++)//neighbors traversing
+			{
+				if(adjMatrix[minVertex][j]!=0 && !visited[j])
+				{
+					int newDistance = distance[minVertex] + adjMatrix[minVertex][j];
+					if(newDistance<distance[j])
+					{
+						distance[j] = newDistance;
+					}
+				}
+			}
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter number of vertices: - ");
+		int v =sc.nextInt();
+		System.out.println("Enter number of Edges: - ");
+		int e =sc.nextInt();
+		int adjMatrix[][] = new int[v][v];
+		System.out.println("Enter all the edges:- ");
+		// v1 v2 w
+		for(int i=0;i<e;i++)
+		{
+			int v1 = sc.nextInt();
+			int v2 = sc.nextInt();
+			int w = sc.nextInt();
+			adjMatrix[v1][v2] = w;
+			adjMatrix[v2][v1] = w;
+		}
+		dijkstras(adjMatrix,0);//Passing Graph & the Source
+	}
+
+}
