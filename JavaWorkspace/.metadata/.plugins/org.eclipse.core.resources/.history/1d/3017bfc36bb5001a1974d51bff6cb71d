@@ -68,7 +68,7 @@ public class greedyalgos {
 			{
 				if(adjMatrix[minVertex][j]!=0 && !visited[j])
 				{
-					if(adjMatrix[minVertex][j]<=distance[j])
+					if(adjMatrix[minVertex][j]<distance[j])
 					{
 						distance[j] = adjMatrix[minVertex][j];
 						parent[j] = minVertex;
@@ -107,7 +107,6 @@ public class greedyalgos {
 		}
 		dijkstras(adjMatrix,0);//Passing Graph & the Source
 		dijkstras(adjMatrix,1);//Passing Graph & the Source
-		prims(adjMatrix, 0);
 	}
 
 }

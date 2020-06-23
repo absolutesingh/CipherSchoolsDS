@@ -48,45 +48,6 @@ public class greedyalgos {
 		}
 		System.out.println();
 	}
-	static void prims(int adjMatrix[][], int src)
-	{
-		int v = adjMatrix.length;
-		boolean visited[] = new boolean[v];
-		int distance[] = new int[v];
-		int parent[] = new int[v];
-		for(int i=0;i<v;i++)
-		{
-			distance[i] = Integer.MAX_VALUE;
-		}
-		distance[src] = 0;
-		parent[src] = -1;
-		for(int i=0;i<v-1;i++)
-		{
-			int minVertex = findMinVertex(distance, visited);
-			visited[minVertex] = true;
-			for(int j=0;j<v;j++)
-			{
-				if(adjMatrix[minVertex][j]!=0 && !visited[j])
-				{
-					if(adjMatrix[minVertex][j]<=distance[j])
-					{
-						distance[j] = adjMatrix[minVertex][j];
-						parent[j] = minVertex;
-					}
-				}
-			}
-		}
-		int sum = 0;
-		for(int i=0;i<v;i++)
-		{
-			sum = sum + distance[i];
-		}
-		System.out.println("MST Weight is: "+sum);
-		for(int i=0;i<v;i++)
-		{
-			System.out.println("Parent of "+i+" is "+parent[i]);
-		}
-	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
@@ -107,7 +68,6 @@ public class greedyalgos {
 		}
 		dijkstras(adjMatrix,0);//Passing Graph & the Source
 		dijkstras(adjMatrix,1);//Passing Graph & the Source
-		prims(adjMatrix, 0);
 	}
 
 }

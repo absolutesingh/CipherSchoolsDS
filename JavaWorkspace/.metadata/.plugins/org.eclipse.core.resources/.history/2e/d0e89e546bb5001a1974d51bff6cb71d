@@ -64,27 +64,6 @@ public class greedyalgos {
 		{
 			int minVertex = findMinVertex(distance, visited);
 			visited[minVertex] = true;
-			for(int j=0;j<v;j++)
-			{
-				if(adjMatrix[minVertex][j]!=0 && !visited[j])
-				{
-					if(adjMatrix[minVertex][j]<=distance[j])
-					{
-						distance[j] = adjMatrix[minVertex][j];
-						parent[j] = minVertex;
-					}
-				}
-			}
-		}
-		int sum = 0;
-		for(int i=0;i<v;i++)
-		{
-			sum = sum + distance[i];
-		}
-		System.out.println("MST Weight is: "+sum);
-		for(int i=0;i<v;i++)
-		{
-			System.out.println("Parent of "+i+" is "+parent[i]);
 		}
 	}
 	public static void main(String[] args) {
@@ -107,7 +86,6 @@ public class greedyalgos {
 		}
 		dijkstras(adjMatrix,0);//Passing Graph & the Source
 		dijkstras(adjMatrix,1);//Passing Graph & the Source
-		prims(adjMatrix, 0);
 	}
 
 }

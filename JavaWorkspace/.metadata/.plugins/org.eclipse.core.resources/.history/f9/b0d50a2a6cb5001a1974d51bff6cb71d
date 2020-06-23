@@ -68,7 +68,7 @@ public class greedyalgos {
 			{
 				if(adjMatrix[minVertex][j]!=0 && !visited[j])
 				{
-					if(adjMatrix[minVertex][j]<=distance[j])
+					if(adjMatrix[minVertex][j]<distance[j])
 					{
 						distance[j] = adjMatrix[minVertex][j];
 						parent[j] = minVertex;
