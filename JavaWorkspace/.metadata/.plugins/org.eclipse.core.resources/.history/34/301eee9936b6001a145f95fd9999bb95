@@ -1,0 +1,34 @@
+package dp;
+
+public class Fibonacci {
+	static int fib(int n)
+	{
+		if(n==0 || n==1) return n;
+		int a = fib(n-1);
+		int b = fib(n-2);
+		int ans = a + b;
+		return ans;
+	}
+	static int fibM(int n, int storage[])
+	{
+		if(storage[n]!=0) return storage[n];// if already calculated means stored in array, so return
+		if(n==0 || n==1) return n;
+		int a = fibM(n-1,storage);
+		int b = fibM(n-2,storage);
+		int ans = a + b;
+		storage[n] = ans; // store answer in the array
+		return ans;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n = 60;
+		int storage[] = new int[n+1];
+		long startTime = System.currentTimeMillis();
+//		System.out.println(fib(n));
+		System.out.println(fibM(n,storage));
+		long endTime = System.currentTimeMillis();
+		System.out.println("Time taken: "+(endTime-startTime));
+		
+	}
+
+}
