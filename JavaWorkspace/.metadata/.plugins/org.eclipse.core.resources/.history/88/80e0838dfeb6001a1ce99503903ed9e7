@@ -1,0 +1,16 @@
+package dp;
+
+public class CountSteps {
+	static int findStep(int n)
+	{
+		if(n==0) return 1;
+		return findStep(n-1) + findStep(n-2) + findStep(n-3);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int n=4;
+		System.out.println(findStep(n));
+		
+	}
+
+}

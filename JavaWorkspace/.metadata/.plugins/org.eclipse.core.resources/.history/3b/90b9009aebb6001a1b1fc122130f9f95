@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+import java.lang.Math;
+public class Source {
+	//This problem is an extension to the conventional Coin Change Problem
+	//This method returns the number of tickets we can buy without any haggle for change.	
+	public static int ticket( int A[], int X )
+    {  
+        int m = A.length;
+        int table[]=new int[X+1]; 
+      
+        table[0] = 1; 
+      
+        for(int i=0; i<m; i++) 
+            for(int j=A[i]; j<=X; j++) 
+                table[j] += table[j-A[i]]; 
+        int sum = 0;
+        for(int i=0;i<=X;i++)
+        {
+            if(table[i]==0) sum++;
+        }
+        return X-sum;
+    } 
+	public static void main(String[] args){
+		Scanner scan = new Scanner(System.in);
+		int N;
+		N=scan.nextInt(); 
+		int[] A = new int[N]; 
+		for(int j=0;j<N;j++){
+			A[j]=scan.nextInt();
+		}
+		int X;
+		X=scan.nextInt();
+		int result;
+		result = ticket(A,X);
+		System.out.print(result);
+		return;
+	}
+}

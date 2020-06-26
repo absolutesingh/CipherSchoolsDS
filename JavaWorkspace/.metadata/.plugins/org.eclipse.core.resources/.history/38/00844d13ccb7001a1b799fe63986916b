@@ -1,0 +1,16 @@
+package dp;
+
+public class LongestIncreasingSubsequence {
+	static int LIS(int arr[], int n)
+	{
+		if(n == 1) return 1;
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int arr[] = {10,22,9,33,50,41,60,80};
+		int n = arr.length;
+		System.out.println(LIS(arr,n));
+	}
+
+}
