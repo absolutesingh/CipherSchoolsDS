@@ -25,4 +25,5 @@
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="dp.LongestIncreasingSubsequence"/>
     <fullyQualifiedTypeName name="dp.LCS"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 </qualifiedTypeNameHistroy>
